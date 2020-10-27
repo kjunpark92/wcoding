@@ -40,6 +40,29 @@
         height: 5em;
         margin-top: 1em;
         border-radius: 25px 25px 0 0;
+        display: flex;
+        position:relative;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    #downArrowOnSite {
+        padding-top: 1.5em;
+        height: 3.8em;
+        width: 5.75%;
+        z-index: 100;
+        background-color: #7BB7DA;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    #onSiteText {
+        width: 79%;
+        padding-left: 10%;
+        padding-top: .1em;
+        height: 4.9em;
     }
 
     .whiteBottom {
@@ -88,8 +111,9 @@
         height: 4em;
     }
 
-    #downArrow {
-        height: 5.3em;
+    #downArrowOnline {
+        padding-top: 1.5em;
+        height: 3.8em;
         width: 5.75%;
         z-index: 100;
         background-color: #219BD7;
@@ -202,8 +226,11 @@
         <div class="blueTop"></div>
         <div class="subContainer">
             <div id="paymentbox">
-                <p><b style="font-size: 24px;">Payment Method</b><br>
+                <p id="onSiteText"><b style="font-size: 24px;">Payment Method</b><br>
                     On-site Payment</p>
+                    <div id="downArrowOnSite">
+                        <i class="fas fa-caret-down fa-2x"></i>
+                    </div>
             </div>
             <div id="cashContainer">
                 <div class="greyBackground whiteBottom cashBox divNum1" style="font-size: 12px; line-height: 60px;"><b>Cash</b></div>
@@ -237,7 +264,9 @@
             </div>
             <div id="onlinePayment" class="whiteBottom">
                 <div id="onlineText"><b style="font-size: 24px;">Online Payment</b></div>
-                <div id="downArrow"></div>
+                <div id="downArrowOnline">
+                    <i class="fas fa-caret-down fa-2x"></i>
+                </div>
             </div>
             <div id="transferDomestic">
                 <div class="greyBackground whiteBottom domesticTransfer divNum1" style="font-size: 12px; padding-top: 2em; height: 5em;"><b>Bank transfer<br>
