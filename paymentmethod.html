@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Method</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    #mainContainer {
+        width: 85%;
+        margin: auto;
+    }
+
+    .subContainer {
+        margin-top: 2em;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .blueTop {
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+        background-color: #7BB7DA;
+        border-radius: 0 0 30px 30px;
+        width: 40%;
+        height: 2em;
+    }
+
+    #paymentbox {
+        text-align: center;
+        color: white;
+        background-color: #7BB7DA;
+        padding-top: .1em;
+        height: 5em;
+        margin-top: 1em;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .whiteBottom {
+        border-bottom: 7px solid white;
+    }
+
+    .greyBackground {
+        background-color: #E2E3E2;
+    }
+
+    .blueBackground {
+        background-color: #C7E8F8;
+    }
+
+    #cashContainer {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .cashBox {
+        height: 5em;
+    }
+
+    #creditContainer {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    #onlinePayment {
+        display: flex;
+        text-align: center;
+        color: white;
+        background-color: #7BB7DA;
+        padding-top: .6em;
+        height: 4.7em;
+        position:relative;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    #onlineText {
+        width: 79%;
+        padding-left: 10%;
+        padding-top: 1em;
+        background-color: #7BB7DA;
+        height: 4em;
+    }
+
+    #downArrow {
+        height: 5.3em;
+        width: 5.75%;
+        z-index: 100;
+        background-color: #219BD7;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    #transferDomestic {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .domesticTransfer {
+        height: 7em;
+    }
+
+    #transferInternational {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .divNum1 {
+        width: 20%;
+        padding-left: 2%;
+    }
+
+    .divNum2 {
+        width: 26%;
+        padding-left: 1%;
+        font-size: 12px;
+    }
+
+    .divNum3 {
+        width: 43%;
+        padding-left: 1%;
+        font-size: 12px;
+    }
+
+    .divNum4 {
+        width: 5.5%;
+    }
+
+    .internationalTransfer {
+        height: 17em;
+    }
+    
+    .rowContainer3 {
+        width: 44%;
+        font-size: 12px;
+    }
+
+    .rowContainer4 {
+        width: 5.5%;
+    }
+
+    .rowContainer3 .internationalTransfer {
+        height: 8.3em;
+        padding-left: 1em;
+        font-size: 12px;
+    }
+
+    .rowContainer4 .internationalTransfer {
+        height: 8.3em;
+        padding-left: 1em;
+        font-size: 12px;
+    }
+
+    .redText {
+        color: red;
+        font-weight: 700;
+    }
+
+    #transferOnline {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .onlineTransfer {
+        height: 8em;
+    }
+
+    #transferWise {
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 6.76em;
+    }
+
+    .transferWiseText {
+        height: 9em;
+    }
+
+    .bottomLogo {
+        border-radius: 25px 25px 0 0;
+        position: relative;
+        bottom: 0;
+        width: 30%;
+        margin: 0 35%;
+        padding: 0;
+    }
+
+    @media print {
+        body {-webkit-print-color-adjust: exact;}
+    }
+
+</style>
+<body>
+    <div id="mainContainer">
+        <div class="blueTop"></div>
+        <div class="subContainer">
+            <div id="paymentbox">
+                <p><b style="font-size: 24px;">Payment Method</b><br>
+                    On-site Payment</p>
+            </div>
+            <div id="cashContainer">
+                <div class="greyBackground whiteBottom cashBox divNum1" style="font-size: 12px; line-height: 60px;"><b>Cash</b></div>
+                <div class="greyBackground whiteBottom cashBox divNum2" style="padding-top: .5em; height: 4.5em;">
+                    Set up a time with student<br>
+                    relations manager,<br>
+                    and pay on site by cash
+                </div>
+                <div class="greyBackground whiteBottom cashBox divNum3" style="padding-top: .5em; height: 4.5em;">
+                    <i class="fas fa-map-marker fa-sm"></i>
+                    서울 용산구 한강대로40길 39-13, 1층<br>
+                    1st Floor, 39-13, Hangang-daero 40-gil,<br>
+                    Yongsan-gu, Seoul
+                </div>
+                <div class="greyBackground whiteBottom cashBox divNum4" style="height: 3.8em;"></div>
+            </div>
+            <div id="creditContainer">
+                <div class="blueBackground whiteBottom cashbox divNum1" style="font-size: 12px; line-height: 60px;"><b>Credit card</b></div>
+                <div class="blueBackground whiteBottom cashbox divNum2" style="padding-top: .5em; height: 4.5em;">
+                    Set up a time with student<br>
+                    relations manager,<br>
+                    and pay on site by credit card
+                </div>
+                <div class="blueBackground whiteBottom cashbox divNum3" style="padding-top: .5em; height: 4.5em;">
+                    <i class="fas fa-map-marker fa-sm"></i>
+                    서울 용산구 한강대로40길 39-13, 1층<br>
+                    1st Floor, 39-13, Hangang-daero 40-gil,<br>
+                    Yongsan-gu, Seoul
+                </div>
+                <div class="blueBackground whiteBottom cashbox divNum4"></div>
+            </div>
+            <div id="onlinePayment" class="whiteBottom">
+                <div id="onlineText"><b style="font-size: 24px;">Online Payment</b></div>
+                <div id="downArrow"></div>
+            </div>
+            <div id="transferDomestic">
+                <div class="greyBackground whiteBottom domesticTransfer divNum1" style="font-size: 12px; padding-top: 2em; height: 5em;"><b>Bank transfer<br>
+                    (Domestic - Korea)</b></div>
+                <div class="greyBackground whiteBottom domesticTransfer divNum2" style="padding-top: .5em; height: 6.5em;">
+                    Domestic bank transfer<br>
+                    through ATM, mobile<br>
+                    devices, bank apps or visit<br>
+                    your nearby bank and<br>
+                    transfer the tuition directly
+                </div>
+                <div class="greyBackground whiteBottom domesticTransfer divNum3" style="padding-top: 1.5em; height: 5.5em;">
+                    <span class="redText">− Account Info:</span> 065-130216-01-013<br>
+                    <span class="redText">− Bank:</span> IBK 기업은행<br>
+                    <span class="redText">− Recipient:</span> ㈜ 더블유코딩
+                </div>
+                <div class="greyBackground whiteBottom domesticTransfer divNum4" style="height: 5.25em;"></div>
+            </div>
+            <div id="transferInternational">
+                <div class="blueBackground whiteBottom internationalTransfer divNum1" style="font-size: 12px; padding-top: 8em; height: 9em;"><b>Bank transfer<br>
+                    (International)</b></div>
+                <div class="blueBackground whiteBottom internationalTransfer divNum2" style="font-size: 12px; padding-top: 7em; height: 10em;">
+                    Visit your nearby bank for<br>
+                    international wire transfer.<br>
+                    Students should transfer<br>
+                    the exact amount in USD.
+                </div>
+                <div class="rowContainer3">
+                    <div class="blueBackground whiteBottom internationalTransfer" style="padding-top: 1em; height: 7.3em;">
+                        <span class="redText">− Bank:</span> Industrial Bank of Korea (IBK)<br>
+                        <span class="redText">− Account Info:</span> 065-130216-01-013<br>
+                        <span class="redText">− Bank Address:</span> 708-1 Yeoksam 2(i)-dong,<br>
+                        Gangnam-gu, Seoul<br>
+                        <span class="redText">− SWIFT Code:</span> IBKOKRSE<br>
+                        <span class="redText">− Bank Phone Number:</span> +82 2-566-0884
+                    </div>
+                    <div class="blueBackground whiteBottom internationalTransfer" style="padding-top: 1.7em; height: 6.4em;">
+                        <span class="redText">− Recipient:</span> wcoding<br>
+                        <span class="redText">− Wcoding Address:</span> 1st Floor, 39-13,<br>
+                        Hangang-daero 40-gil, Yongsan-gu, Seoul 04382<br>
+                        <span class="redText">− Wcoding Phone Number:</span> +82 2-501-6064
+                    </div>
+                </div>
+                <div class="rowContainer4">
+                    <div class="blueBackground whiteBottom internationalTransfer"></div>
+                    <div class="blueBackground whiteBottom internationalTransfer" style="height: 8.1em;"></div>
+                </div>
+            </div>
+            <div id="transferOnline">
+                <div class="greyBackground whiteBottom onlineTransfer divNum1" style="font-size: 12px; padding-top: 2em; height: 6em;">
+                    <b>Online transfer<br>
+                        via TransferWise.com<br>
+                        (Recommended for<br>
+                        oversea payment)</b>
+                </div>
+                <div class="greyBackground whiteBottom onlineTransfer divNum2" style="padding-top: 1.5em; height: 6.5em;">
+                    Use online money transfer<br>
+                    service to lower your cost<br>
+                    on international<br>
+                    transaction fee.
+                </div>
+                <div class="greyBackground whiteBottom onlineTransfer divNum3" style="padding-top: 3.5em; height: 4.5em;">
+                    Please follow the steps in the TransferWise Guide
+                </div>
+                <div class="greyBackground whiteBottom onlineTransfer divNum4" style="height: 6em;"></div>
+            </div>
+            <div id="transferWise">
+                <div class="blueBackground whiteBottom transferWiseText divNum1" style="font-size: 12px; padding-top: 2.5em; height: 6.5em;">
+                    <b>Credit Card via<br>
+                        TransferWise.com<br>
+                        (Recommended for<br>
+                        oversea payment)</b>
+                </div>
+                <div class="blueBackground whiteBottom transferWiseText divNum2" style="padding-top: 3em; height: 6em;">
+                    Pay by credit card via<br>
+                    TransferWise.com
+                </div>
+                <div class="blueBackground whiteBottom transferWiseText divNum3" style="padding-top: 2em; height: 7em;">
+                    Please notice that TransferWise only accepts<br>
+                    credit card with single payment under 2,000 USD.<br>
+                    If your total amount of tuition exceeds 2,000 USD,<br>
+                    you may need to separate it to two-time transactions.
+
+                </div>
+                <div class="blueBackground whiteBottom transferWiseText divNum4" style="height: 6.75em;"></div>
+            </div>
+            <img src="./Images/logo-all-white-blue-back-wide.png" alt="Bottom Logo" class="bottomLogo">
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/6c4b917d35.js" crossorigin="anonymous"></script>

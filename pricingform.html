@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wcoding Pricing</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    #bodyContainer {
+        padding-bottom: 7.5rem;
+    }
+
+    .blueTop {
+        margin: 0 auto;
+        text-align: center;
+        align-content: center;
+        background-color: #7BB7DA;
+        border-radius: 0 0 30px 30px;
+        width: 40%;
+        height: 2rem;
+    }
+
+    .contactInfo {
+        margin-top: 2rem;
+    }
+
+    .footer {
+        background-color: #7BB7DA;
+        position:absolute;
+        color: #FCFCFC;
+        bottom: 0;
+        width: 100%;
+        height: 13rem;
+    }
+
+    .footerText {
+        margin: 0 10%
+    }
+
+    .marginBody {
+        width: 80%;
+        margin: auto;
+    }
+
+    .boxesContainer {
+        margin-top: 5rem;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    .smallPerc {
+        width: 20%;
+    }
+
+    .bigPerc {
+        width: 29%;
+    }
+
+    .pricingBoxes {
+        border-radius: 25px 25px 0 0;
+        height: 25rem;
+    }
+
+    .whiteBottom {
+        border-bottom: white solid 3px;
+    }
+
+    .boxesTitle {
+        color: white;
+        border-bottom: white solid 2px;
+        height: 3.99rem;
+        padding-top: .01rem;
+        border-radius: 25px 25px 0 0;
+        text-align: center;
+    }
+
+    .divNum1 {
+        height: 90%;
+    }
+
+    .divNum2 {
+        height: 120%;
+    }
+
+    .divNum3 {
+        height: 90%;
+    }
+
+    .divNum4 {
+        height: 235%;
+    }
+
+    /* 
+    ** BOXES CONTAINER ID **
+    */
+    
+    #codingCourseBackground{
+        background-color: #FAD1C7;
+    }
+
+    #codingCourseDiv {
+        background-color: #EE2523;
+    }
+
+    #priceBackground {
+        background-color: #C3E9FA;
+    }
+
+    #priceTitleDiv {
+        background-color: #7BB7DA;
+    }
+    
+    #periodBackground {
+        background-color: #F8F6C6;
+    }
+
+    #periodTitleDiv {
+        background-color: #FAC839;
+    }
+
+    #noteBackground {
+        background-color: #D2EBE4;
+    }
+
+    #noteTitleDiv {
+        background-color: #68C7C1;
+    }
+
+    /* 
+    ** ICONS **
+    */
+
+    .fa-phone-square-alt {
+        color: #7BB7DA;
+    }
+
+    .fa-globe-asia {
+        color: #7BB7DA;
+    }
+
+    @media print {
+        body {-webkit-print-color-adjust: exact;}
+    }
+
+</style>
+<body>
+    <div class="mainContainer">
+        <div id="bodyContainer">
+            <div class="marginBody">
+                <div class="blueTop"></div>
+                <img src="./Images/logo2-1.jpg" style="margin-top: 1rem;" alt="Wcoding Logo">
+                <div style="text-align: right;">
+                    <h2 style="color: #75777A; margin: 0;">Price List and Payment Method</h2>
+                    <h2 class="autofillInfo" style="color: #7CB7DA; margin: 0;">James</h2>
+                </div>
+                <div class="boxesContainer">
+                    <div class="pricingBoxes bigPerc" id="codingCourseBackground">
+                        <div class="boxesTitle" id="codingCourseDiv">
+                            <h3>CODING COURSE</h3>
+                            <div class="whiteBottom autofillInfo divNum1"></div>
+                            <div class="whiteBottom autofillInfo divNum2"></div>
+                            <div class="whiteBottom autofillInfo divNum3"></div>
+                            <div class="whiteBottom autofillInfo divNum4"></div>
+                        </div>
+                    </div>
+                    <div class="pricingBoxes smallPerc" id="priceBackground">
+                        <div class="boxesTitle" id="priceTitleDiv">
+                            <h3>PRICE</h3>
+                            <div class="whiteBottom autofillInfo divNum1"></div>
+                            <div class="whiteBottom autofillInfo divNum2"></div>
+                            <div class="whiteBottom autofillInfo divNum3"></div>
+                            <div class="whiteBottom autofillInfo divNum4"></div>
+                        </div>
+                    </div>    
+                    <div class="pricingBoxes smallPerc" id="periodBackground">
+                        <div class="boxesTitle" id="periodTitleDiv">
+                            <h3>PERIOD</h3>
+                            <div class="whiteBottom autofillInfo divNum1"></div>
+                            <div class="whiteBottom autofillInfo divNum2"></div>
+                            <div class="whiteBottom autofillInfo divNum3"></div>
+                            <div class="whiteBottom autofillInfo divNum4"></div>
+                        </div>
+                    </div>
+                    <div class="pricingBoxes bigPerc" id="noteBackground">
+                        <div class="boxesTitle" id="noteTitleDiv">
+                            <h3>NOTE</h3>
+                            <div class="whiteBottom autofillInfo divNum1"></div>
+                            <div class="whiteBottom autofillInfo divNum2"></div>
+                            <div class="whiteBottom autofillInfo divNum3"></div>
+                            <div class="whiteBottom autofillInfo divNum4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactInfo">
+                    <i style="margin-bottom: .5rem;" class="fas fa-phone-square-alt fa-lg"></i><span> +82 2.501.6064</span><br>
+                    <i style="margin-bottom: 1.5rem;" class="fas fa-globe-asia fa-lg"></i><span> www.wcodingcampus.com</span><br>
+                    <i class="fas fa-map-marker fa-lg"></i><span>서울 용산구 한강대로40길 39-13, 1층<br>
+                        1st Floor, 39-13, Hangang-daero 40-gil,<br>
+                        Yongsan-gu, Seoul </span>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerText">
+                <p><b>Cancellation & Refund Policy</b><br>
+                * A 100% refund is guaranteed three weeks before the course starts, and 80% tuition refund until the end
+                    of the first week of class. (Except 150 USD registration fee is non-refundable.)<br>
+                * The minimum number to open a class is 4. If there’s insufficient number of students, we will give full refund
+                    to students, or extend your enrollment to the next batch.</p>
+                <p><b>Early Bird Discount Policy</b><br>
+                * Please note that the early bird is a limited offer that the transaction of the full amount of tuition should be
+                    completed in 7 days.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/6c4b917d35.js" crossorigin="anonymous"></script>
