@@ -21,7 +21,7 @@
         text-align: center;
         align-content: center;
         background-color: #7BB7DA;
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 20px 20px;
         width: 40%;
         height: 2rem;
     }
@@ -228,7 +228,9 @@
         <div id="bodyContainer">
             <div class="marginBody">
                 <div class="blueTop"></div>
-                <img src="./Images/logo-20160929-bluew.jpg" style="margin-top: 1rem; margin-bottom: 2rem; width: 30%;" alt="Wcoding Logo">
+                <a href="./forminput.html">
+                    <img src="./Images/logo-20160929-bluew.jpg" style="margin-top: 1rem; margin-bottom: 2rem; width: 30%;" alt="Wcoding Logo">
+                </a>
                 <div style="text-align: right;">
                     <h2 style="color: #75777A; margin: 0;">Price List and Payment Method</h2>
                     <h2 style="color: #7CB7DA; margin: 0;" id="name"></h2>
@@ -247,7 +249,7 @@
                             <h3 class="titleH3">PRICE</h3>
                             <div class="whiteBottom divNum1" style="text-decoration: line-through;">$150</div>
                             <div class="whiteBottom divNum2" id="priceNameId1"></div>
-                            <div class="whiteBottom divNum3">
+                            <div class="whiteBottom divNum3" id="priceDiv3">
                                 <span id="priceNameId2" style="text-decoration: line-through;"></span><br><br>
                                 <span id="discountPriceId"></span>
                             </div>
@@ -614,7 +616,7 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         price: "$6,900",
         weeks: 12,
         tution: "Full Stack",
-        schedule: "Mon. - Fri.<br>10:00AM - 4:00PM (1~2pm Lunch)",
+        schedule: "Mon. - Fri.<br>10:00AM - 4:00PM<br>(1~2pm Lunch)",
         classes: 60,
         hours: 300,
         priceFifteen: "$5,865",
@@ -644,6 +646,8 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         document.querySelector('#hourNameId').innerHTML = fullStackHour
         document.querySelector('#tutionNameId').innerHTML = fullStackTution
         document.querySelector('#scheduleNameId').innerHTML = fullStackSchedule
+        
+        document.querySelector('#priceDiv3').style.paddingTop = "40%";
 
         if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
             document.querySelector('#discountPriceId').innerHTML = fullstackhundredDiscountFive
