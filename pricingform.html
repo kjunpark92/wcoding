@@ -27,7 +27,7 @@
     }
 
     .contactInfo {
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .footer {
@@ -52,19 +52,49 @@
         margin-top: 5rem;
         justify-content: space-around;
         display: flex;
+        font-weight: 700;
+        font-size: 16px;
     }
 
     .smallPerc {
         width: 20%;
     }
 
+    .smallPerc  .divNum1 {
+        height: 56%;
+        padding-top: 9%;
+    }
+
+    .smallPerc  .divNum2 {
+        height: 74%;
+        padding-top: 14%;
+    }
+
+    .smallPerc .divNum3 {
+        padding-top: 20%;
+    }
+
     .bigPerc {
         width: 29%;
     }
 
+    .bigPerc .divNum1 {
+        height: 57%;
+        padding-top: 6%;
+    }
+
+    .bigPerc .divNum2 {
+        height: 86%;
+        padding-top: 6%;
+    }
+
+    .bigPerc .divNum3 {
+        padding-top: 15%;
+    }
+
     .pricingBoxes {
         border-radius: 25px 25px 0 0;
-        height: 25rem;
+        height: 20.5rem;;
     }
 
     .whiteBottom {
@@ -89,11 +119,34 @@
     }
 
     .divNum3 {
-        height: 90%;
+        height: 235%;
     }
 
-    .divNum4 {
-        height: 235%;
+    .titleH3 {
+        color: white;
+        font-size: 20px;
+    }
+
+    #weeksNameId2 {
+        font-size: 16px;
+    }
+
+    #discountPriceId {
+        font-size: 16px;
+        color: red;
+    }
+
+    #periodTitleDiv .divNum3 {
+        font-size: 12px;
+    }
+
+    #noteTitleDiv .divNum3 {
+        font-size: 16px;
+        color: red;
+    }
+
+    #classNameId {
+        font-size: 12px;
     }
 
     /* 
@@ -106,6 +159,7 @@
 
     #codingCourseDiv {
         background-color: #EE2523;
+        color: black;
     }
 
     #priceBackground {
@@ -114,6 +168,7 @@
 
     #priceTitleDiv {
         background-color: #7BB7DA;
+        color: #2E9ED8;
     }
     
     #periodBackground {
@@ -122,6 +177,7 @@
 
     #periodTitleDiv {
         background-color: #FAC839;
+        color: black;
     }
 
     #noteBackground {
@@ -130,6 +186,7 @@
 
     #noteTitleDiv {
         background-color: #68C7C1;
+        color: black;
     }
 
     /* 
@@ -157,43 +214,50 @@
                 <img src="./Images/logo2-1.jpg" style="margin-top: 1rem;" alt="Wcoding Logo">
                 <div style="text-align: right;">
                     <h2 style="color: #75777A; margin: 0;">Price List and Payment Method</h2>
-                    <h2 class="autofillInfo" style="color: #7CB7DA; margin: 0;">James</h2>
+                    <h2 style="color: #7CB7DA; margin: 0;" id="name"></h2>
                 </div>
                 <div class="boxesContainer">
                     <div class="pricingBoxes bigPerc" id="codingCourseBackground">
                         <div class="boxesTitle" id="codingCourseDiv">
-                            <h3>CODING COURSE</h3>
-                            <div class="whiteBottom autofillInfo divNum1"></div>
-                            <div class="whiteBottom autofillInfo divNum2"></div>
-                            <div class="whiteBottom autofillInfo divNum3"></div>
-                            <div class="whiteBottom autofillInfo divNum4"></div>
+                            <h3 class="titleH3">CODING COURSE</h3>
+                            <div class="whiteBottom divNum1">Registration Fee</div>
+                            <div class="whiteBottom divNum2" id="courseNameId">
+                                Python Nights<br>
+                                for Beginners
+                            </div>
+                            <div class="whiteBottom divNum3">Final Total price</div>
                         </div>
                     </div>
                     <div class="pricingBoxes smallPerc" id="priceBackground">
                         <div class="boxesTitle" id="priceTitleDiv">
-                            <h3>PRICE</h3>
-                            <div class="whiteBottom autofillInfo divNum1"></div>
-                            <div class="whiteBottom autofillInfo divNum2"></div>
-                            <div class="whiteBottom autofillInfo divNum3"></div>
-                            <div class="whiteBottom autofillInfo divNum4"></div>
+                            <h3 class="titleH3">PRICE</h3>
+                            <div class="whiteBottom divNum1" style="text-decoration: line-through;">$150</div>
+                            <div class="whiteBottom divNum2" id="priceNameId1"></div>
+                            <div class="whiteBottom divNum3">
+                                <span id="priceNameId2" style="text-decoration: line-through;"></span><br><br>
+                                <span id="discountPriceId"></span>
+                            </div>
                         </div>
                     </div>    
                     <div class="pricingBoxes smallPerc" id="periodBackground">
                         <div class="boxesTitle" id="periodTitleDiv">
-                            <h3>PERIOD</h3>
-                            <div class="whiteBottom autofillInfo divNum1"></div>
-                            <div class="whiteBottom autofillInfo divNum2"></div>
-                            <div class="whiteBottom autofillInfo divNum3"></div>
-                            <div class="whiteBottom autofillInfo divNum4"></div>
+                            <h3 class="titleH3">PERIOD</h3>
+                            <div class="whiteBottom divNum1">One time payment</div>
+                            <div class="whiteBottom divNum2"><span id="weeksNameId1"></span> weeks</div>
+                            <div class="whiteBottom divNum3">
+                                <span id="weeksNameId2"></span><br>
+                                (<span id="classNameId"></span> classes | <span id="hourNameId"></span> hours)
+                            </div>
                         </div>
                     </div>
                     <div class="pricingBoxes bigPerc" id="noteBackground">
                         <div class="boxesTitle" id="noteTitleDiv">
-                            <h3>NOTE</h3>
-                            <div class="whiteBottom autofillInfo divNum1"></div>
-                            <div class="whiteBottom autofillInfo divNum2"></div>
-                            <div class="whiteBottom autofillInfo divNum3"></div>
-                            <div class="whiteBottom autofillInfo divNum4"></div>
+                            <h3 class="titleH3">NOTE</h3>
+                            <div class="whiteBottom divNum1">Included in the <span id="tutionNameId"></span> Tution</div>
+                            <div class="whiteBottom divNum2" id="scheduleNameId"></div>
+                            <div class="whiteBottom divNum3">
+                                <span id="discountTypeId"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -213,8 +277,8 @@
                     of the first week of class. (Except 150 USD registration fee is non-refundable.)<br>
                 * The minimum number to open a class is 4. If there’s insufficient number of students, we will give full refund
                     to students, or extend your enrollment to the next batch.</p>
-                <p><b>Early Bird Discount Policy</b><br>
-                * Please note that the early bird is a limited offer that the transaction of the full amount of tuition should be
+                <p><b>Discount Policy</b><br>
+                * Please note that the Wcoding member discount is a limited offer that the transaction of the full amount of tuition should be
                     completed in 7 days.</p>
             </div>
         </div>
@@ -223,3 +287,362 @@
 </html>
 
 <script src="https://kit.fontawesome.com/6c4b917d35.js" crossorigin="anonymous"></script>
+<script>
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+
+function getAllUrlParams(url) {
+  var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+  var obj = {};
+
+  if (queryString) {
+    queryString = queryString.split('#')[0];
+    var arr = queryString.split('&');
+
+    for (var i = 0; i < arr.length; i++) {
+      var a = arr[i].split('=');
+      var paramName = a[0];
+      var paramValue = typeof (a[1]) === 'undefined' ? true : a[1];
+
+      paramName = paramName.toLowerCase();
+      if (typeof paramValue === 'string') paramValue = paramValue.toLowerCase();
+
+      if (paramName.match(/\[(\d+)?\]$/)) {
+        var key = paramName.replace(/\[(\d+)?\]/, '');
+        if (!obj[key]) obj[key] = [];
+
+        if (paramName.match(/\[\d+\]$/)) {
+          var index = /\[(\d+)\]/.exec(paramName)[1];
+          obj[key][index] = paramValue;
+        } else {
+          obj[key].push(paramValue);
+        }
+      } else {
+        if (!obj[paramName]) {
+          obj[paramName] = paramValue;
+        } else if (obj[paramName] && typeof obj[paramName] === 'string'){
+          obj[paramName] = [obj[paramName]];
+          obj[paramName].push(paramValue);
+        } else {
+          obj[paramName].push(paramValue);
+        }
+      }
+    }
+  }
+
+  return obj;
+}
+console.log("Namme",getAllUrlParams()["name"])
+console.log("Course",getAllUrlParams()["course%5b%5d"])
+console.log("Discount",getAllUrlParams()["discount%5b%5d"])
+
+    function titleCase(str) {
+        var splitStr = str.toLowerCase().split(' ');
+        for (var i = 0; i < splitStr.length; i++) {
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+        }
+        return splitStr.join(' '); 
+    }
+
+    var fullName = getAllUrlParams()["name"].replace("+", " ");
+    document.querySelector('#name').innerHTML = titleCase(fullName)
+
+    if(getAllUrlParams()["discount%5b%5d"] == 0) {   
+        document.querySelector('#priceNameId2').style.textDecoration = "none";
+        document.querySelector('#priceNameId2').style.color = "red";
+        document.querySelector('#priceNameId2').style.fontSize = "16px";
+    }
+
+    var earlyBird5 = {
+        discountType: "Early Bird Discount:<br>",
+    }
+
+    var earlyBird5DisType = earlyBird5.discountType
+
+    if(getAllUrlParams()["discount%5b%5d"] == 1) {
+        document.querySelector('#discountTypeId').innerHTML = earlyBird5DisType
+    }
+
+    var earlyBird10 = {
+        discountType: "Early Bird Discount:<br>10% OFF",
+    }
+
+    var earlyBird10DisType = earlyBird10.discountType
+
+    if(getAllUrlParams()["discount%5b%5d"] == 2) {
+        document.querySelector('#discountTypeId').innerHTML = earlyBird10DisType
+    }
+
+    var earlyBird15 = {
+        discountType: "Early Bird Discount:<br>15% OFF",
+    }
+
+    var earlyBird15DisType = earlyBird15.discountType
+
+    if(getAllUrlParams()["discount%5b%5d"] == 3) {
+        document.querySelector('#discountTypeId').innerHTML = earlyBird15DisType
+    }
+
+    var special5 = {
+        discountType: "Special Discount:<br>5% OFF",
+    }
+
+    var special5DisType = special5.discountType
+
+    if(getAllUrlParams()["discount%5b%5d"] == 4) {
+        document.querySelector('#discountTypeId').innerHTML = special5DisType
+    }
+
+    var special10 = {
+        discountType: "Special Discount:<br>10% OFF",
+    }
+
+    var special10DisType = special10.discountType
+
+    if(getAllUrlParams()["discount%5b%5d"] == 5) {
+        document.querySelector('#discountTypeId').innerHTML = special10DisType
+    }
+
+    var special15 = {
+        discountType: "Special Discount:<br>15% OFF",
+    }
+
+    var special15DisType = special15.discountType
+
+    if(getAllUrlParams()["discount%5b%5d"] == 6) {
+        document.querySelector('#discountTypeId').innerHTML = special15DisType
+    }
+
+    var pythonBeg = {
+        name: "Python Nights(Beginner)",
+        price: "$900",
+        weeks: 8,
+        tution: "Python",
+        schedule: "Twice a week.<br>7:30PM - 10:00PM",
+        classes: 16,
+        hours: 40,
+        priceFifteen: "$765",
+        priceTen: "$810",
+        priceFive: "$855",
+    }
+
+    var pythonBegName = pythonBeg.name
+    var pythonBegPrice = pythonBeg.price
+    var pythonBegWeeks = pythonBeg.weeks
+    var pythonBegClass = pythonBeg.classes
+    var pythonBegHour = pythonBeg.hours
+    var pythonBegTution = pythonBeg.tution
+    var pythonBegSchedule = pythonBeg.schedule
+
+
+    var ninehundredDiscountFifteen = pythonBeg.priceFifteen
+    var ninehundredDiscountTen = pythonBeg.priceTen
+    var ninehundredDiscountFive = pythonBeg.priceFive
+
+    if(getAllUrlParams()["course%5b%5d"] == 0) {
+        document.querySelector('#courseNameId').innerHTML = pythonBegName
+        document.querySelector('#priceNameId1').innerHTML = pythonBegPrice
+        document.querySelector('#priceNameId2').innerHTML = pythonBegPrice
+        document.querySelector('#weeksNameId1').innerHTML = pythonBegWeeks
+        document.querySelector('#weeksNameId2').innerHTML = pythonBegWeeks + " weeks"
+        document.querySelector('#classNameId').innerHTML = pythonBegClass
+        document.querySelector('#hourNameId').innerHTML = pythonBegHour
+        document.querySelector('#tutionNameId').innerHTML = pythonBegTution
+        document.querySelector('#scheduleNameId').innerHTML = pythonBegSchedule
+        
+        if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFive
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 2 || getAllUrlParams()["discount%5b%5d"] == 5) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountTen
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 3 || getAllUrlParams()["discount%5b%5d"] == 6) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFifteen
+        }
+    }
+    
+    var pythonInt = {
+        name: "Python Nights(Intermediate)",
+        price: "$900",
+        weeks: 8,
+        tution: "Python",
+        schedule: "Twice a week.<br>7:30PM - 10:00PM",
+        classes: 16,
+        hours: 40
+    }
+
+    var pythonIntName = pythonInt.name
+    var pythonIntPrice = pythonInt.price
+    var pythonIntWeeks = pythonInt.weeks
+    var pythonIntClass = pythonInt.classes
+    var pythonIntHour = pythonInt.hours
+    var pythonIntTution = pythonInt.tution
+    var pythonIntSchedule = pythonInt.schedule
+
+    if(getAllUrlParams()["course%5b%5d"] == 1) {
+        document.querySelector('#courseNameId').innerHTML = pythonIntName
+        document.querySelector('#priceNameId1').innerHTML = pythonIntPrice
+        document.querySelector('#priceNameId2').innerHTML = pythonBegPrice
+        document.querySelector('#weeksNameId1').innerHTML = pythonIntWeeks
+        document.querySelector('#weeksNameId2').innerHTML = pythonIntWeeks + " weeks"
+        document.querySelector('#classNameId').innerHTML = pythonIntClass
+        document.querySelector('#hourNameId').innerHTML = pythonIntHour
+        document.querySelector('#tutionNameId').innerHTML = pythonIntTution
+        document.querySelector('#scheduleNameId').innerHTML = pythonIntSchedule
+
+        if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFive
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 2 || getAllUrlParams()["discount%5b%5d"] == 5) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountTen
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 3 || getAllUrlParams()["discount%5b%5d"] == 6) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFifteen
+        }
+    }
+
+    var frontendNights = {
+        name: "Front-End Nights",
+        price: "$900",
+        weeks: 8,
+        tution: "Front-End",
+        schedule: "Twice a week.<br>7:30PM - 10:00PM",
+        classes: 16,
+        hours: 40,
+    }
+
+    var frontendNightsName = frontendNights.name
+    var frontendNightsPrice = frontendNights.price
+    var frontendNightsWeeks = frontendNights.weeks
+    var frontendNightsClass = frontendNights.classes
+    var frontendNightsHour = frontendNights.hours
+    var frontendNightsTution = frontendNights.tution
+    var frontendNightsSchedule = frontendNights.schedule
+
+    if(getAllUrlParams()["course%5b%5d"] == 2) {
+        document.querySelector('#courseNameId').innerHTML = frontendNightsName
+        document.querySelector('#priceNameId1').innerHTML = frontendNights
+        document.querySelector('#priceNameId2').innerHTML = pythonBegPricePrice
+        document.querySelector('#weeksNameId1').innerHTML = frontendNightsWeeks
+        document.querySelector('#weeksNameId2').innerHTML = frontendNightsWeeks + " weeks"
+        document.querySelector('#classNameId').innerHTML = frontendNightsClass
+        document.querySelector('#hourNameId').innerHTML = frontendNightsHour
+        document.querySelector('#tutionNameId').innerHTML = frontendNightsTution
+        document.querySelector('#scheduleNameId').innerHTML = frontendNightsSchedule
+
+        if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFive
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 2 || getAllUrlParams()["discount%5b%5d"] == 5) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountTen
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 3 || getAllUrlParams()["discount%5b%5d"] == 6) {
+            document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFifteen
+        }
+    }
+
+    var devTools = {
+        name: "Development Tools",
+        price: "$450",
+        weeks: 4,
+        tution: "Development Tools",
+        schedule: "Twice a week.<br>7:30PM - 10:00PM",
+        classes: 8,
+        hours: 20,
+        priceFifteen: "$382.50",
+        priceTen: "$405",
+        priceFive: "$427.50",
+    }
+
+    var devToolsName = devTools.name
+    var devToolsPrice = devTools.price
+    var devToolsWeeks = devTools.weeks
+    var devToolsClass = devTools.classes
+    var devToolsHour = devTools.hours
+    var devToolsTution = devTools.tution
+    var devToolsSchedule = devTools.schedule
+    
+    var fourhundredDiscountFifteen = devTools.priceFifteen
+    var fourhundredDiscountTen = devTools.priceTen
+    var fourhundredDiscountFive = devTools.priceFive
+
+    if(getAllUrlParams()["course%5b%5d"] == 3) {
+        document.querySelector('#courseNameId').innerHTML = devToolsName
+        document.querySelector('#priceNameId1').innerHTML = devToolsPrice        
+        document.querySelector('#priceNameId2').innerHTML = devToolsPrice        
+        document.querySelector('#weeksNameId1').innerHTML = devToolsWeeks
+        document.querySelector('#weeksNameId2').innerHTML = devToolsWeeks + " weeks"
+        document.querySelector('#classNameId').innerHTML = devToolsClass
+        document.querySelector('#hourNameId').innerHTML = devToolsHour
+        document.querySelector('#tutionNameId').innerHTML = devToolsTution
+        document.querySelector('#scheduleNameId').innerHTML = devToolsSchedule
+
+        if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
+            document.querySelector('#discountPriceId').innerHTML = fourhundredDiscountFive
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 2 || getAllUrlParams()["discount%5b%5d"] == 5) {
+            document.querySelector('#discountPriceId').innerHTML = fourhundredDiscountTen
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 3 || getAllUrlParams()["discount%5b%5d"] == 6) {
+            document.querySelector('#discountPriceId').innerHTML = fourhundredDiscountFifteen
+        }
+    }
+
+    var fullStack = {
+        name: "Full Stack Intensive",
+        price: "$6,900",
+        weeks: 12,
+        tution: "Full Stack",
+        schedule: "Mon. - Fri.<br>10:00AM - 4:00PM (1~2pm Lunch)",
+        classes: 60,
+        hours: 300,
+        priceFifteen: "$5,865",
+        priceTen: "$6,210",
+        priceFive: "$6,555",
+    }
+
+    var fullStackName = fullStack.name
+    var fullStackPrice = fullStack.price
+    var fullStackWeeks = fullStack.weeks
+    var fullStackClass = fullStack.classes
+    var fullStackHour = fullStack.hours
+    var fullStackTution = fullStack.tution
+    var fullStackSchedule = fullStack.schedule
+
+    var fullstackDiscountFifteen = fullStack.priceFifteen
+    var fullstackDiscountTen = fullStack.priceTen
+    var fullstackDiscountFive = fullStack.priceFive
+
+    if(getAllUrlParams()["course%5b%5d"] == 4) {
+        document.querySelector('#courseNameId').innerHTML = fullStackName
+        document.querySelector('#priceNameId1').innerHTML = fullStackPrice
+        document.querySelector('#priceNameId2').innerHTML = fullStackPrice
+        document.querySelector('#weeksNameId1').innerHTML = fullStackWeeks
+        document.querySelector('#weeksNameId2').innerHTML = fullStackWeeks + " weeks"
+        document.querySelector('#classNameId').innerHTML = fullStackClass
+        document.querySelector('#hourNameId').innerHTML = fullStackHour
+        document.querySelector('#tutionNameId').innerHTML = fullStackTution
+        document.querySelector('#scheduleNameId').innerHTML = fullStackSchedule
+
+        if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
+            document.querySelector('#discountPriceId').innerHTML = fullstackhundredDiscountFive
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 2 || getAllUrlParams()["discount%5b%5d"] == 5) {
+            document.querySelector('#discountPriceId').innerHTML = fullstackhundredDiscountTen
+        }
+
+        if(getAllUrlParams()["discount%5b%5d"] == 3 || getAllUrlParams()["discount%5b%5d"] == 6) {
+            document.querySelector('#discountPriceId').innerHTML = fullstackhundredDiscountFifteen
+        }
+    }
+</script>

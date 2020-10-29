@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Input Form</title>
+</head>
+<body>
+    <form action="pricingform.html" method="get">
+        Name: <input type="text" name="name"><br>
+        <label for="course">Course: </label>
+            <select id="course" name="course[]">
+                <option value="0">Python Nights(Beginner)</option>
+                <option value="1">Python Nights(Intermediate)</option>
+                <option value="2">Front-End Nights</option>
+                <option value="3">Development Tools</option>
+                <option value="4">Full Stack</option>
+            </select><br>
+            <label for="Discount">Discount: </label>
+            <select id="Discount" name="Discount[]">
+                <option value="0">None</option>
+                <option value="1">Early Bird 5%</option>
+                <option value="2">Early Bird 10%</option>
+                <option value="3">Early Bird 15%</option>
+                <option value="4">Special Discount 5%</option>
+                <option value="5">Special Discount 10%</option>
+                <option value="6">Special Discount 15%</option>
+            </select><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
