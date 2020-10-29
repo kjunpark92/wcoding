@@ -71,7 +71,7 @@
     }
 
     .smallPerc .divNum3 {
-        padding-top: 20%;
+        padding-top: 25%;
     }
 
     .bigPerc {
@@ -89,7 +89,7 @@
     }
 
     .bigPerc .divNum3 {
-        padding-top: 15%;
+        padding-top: 30%;
     }
 
     .pricingBoxes {
@@ -131,22 +131,39 @@
         font-size: 16px;
     }
 
+    #classNameId {
+        font-size: 12px;
+    }
+
     #discountPriceId {
         font-size: 16px;
         color: red;
     }
 
+    #codingCourseDiv .divNum2 {
+        height: 74%;
+        padding-top: 10%;
+    }
+
+    #periodTitleDiv .divNum1 {
+        padding-top: 4%;
+        height: 66%;
+    }
+
     #periodTitleDiv .divNum3 {
         font-size: 12px;
+        padding-top: 40%;
+    }
+
+    #noteTitleDiv .divNum1 {
+        height: 66%;
+        padding-top: 3%;
     }
 
     #noteTitleDiv .divNum3 {
         font-size: 16px;
         color: red;
-    }
-
-    #classNameId {
-        font-size: 12px;
+        padding-top: 25%;
     }
 
     /* 
@@ -211,7 +228,7 @@
         <div id="bodyContainer">
             <div class="marginBody">
                 <div class="blueTop"></div>
-                <img src="./Images/logo2-1.jpg" style="margin-top: 1rem;" alt="Wcoding Logo">
+                <img src="./Images/logo-20160929-bluew.jpg" style="margin-top: 1rem; margin-bottom: 2rem; width: 30%;" alt="Wcoding Logo">
                 <div style="text-align: right;">
                     <h2 style="color: #75777A; margin: 0;">Price List and Payment Method</h2>
                     <h2 style="color: #7CB7DA; margin: 0;" id="name"></h2>
@@ -221,10 +238,7 @@
                         <div class="boxesTitle" id="codingCourseDiv">
                             <h3 class="titleH3">CODING COURSE</h3>
                             <div class="whiteBottom divNum1">Registration Fee</div>
-                            <div class="whiteBottom divNum2" id="courseNameId">
-                                Python Nights<br>
-                                for Beginners
-                            </div>
+                            <div class="whiteBottom divNum2" id="courseNameId"></div>
                             <div class="whiteBottom divNum3">Final Total price</div>
                         </div>
                     </div>
@@ -255,9 +269,7 @@
                             <h3 class="titleH3">NOTE</h3>
                             <div class="whiteBottom divNum1">Included in the <span id="tutionNameId"></span> Tution</div>
                             <div class="whiteBottom divNum2" id="scheduleNameId"></div>
-                            <div class="whiteBottom divNum3">
-                                <span id="discountTypeId"></span>
-                            </div>
+                            <div class="whiteBottom divNum3" id="discountTypeId"></div>
                         </div>
                     </div>
                 </div>
@@ -355,7 +367,7 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
     }
 
     var earlyBird5 = {
-        discountType: "Early Bird Discount:<br>",
+        discountType: "Early Bird Discount:<br>5% OFF",
     }
 
     var earlyBird5DisType = earlyBird5.discountType
@@ -526,8 +538,8 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
 
     if(getAllUrlParams()["course%5b%5d"] == 2) {
         document.querySelector('#courseNameId').innerHTML = frontendNightsName
-        document.querySelector('#priceNameId1').innerHTML = frontendNights
-        document.querySelector('#priceNameId2').innerHTML = pythonBegPricePrice
+        document.querySelector('#priceNameId1').innerHTML = frontendNightsPrice
+        document.querySelector('#priceNameId2').innerHTML = frontendNightsPrice
         document.querySelector('#weeksNameId1').innerHTML = frontendNightsWeeks
         document.querySelector('#weeksNameId2').innerHTML = frontendNightsWeeks + " weeks"
         document.querySelector('#classNameId').innerHTML = frontendNightsClass
