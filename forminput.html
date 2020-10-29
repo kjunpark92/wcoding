@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Input Form</title>
 </head>
+<style>
+    #container {
+        margin: 5% 37%;
+    }
+</style>
 <body>
-    <form action="pricingform.html" method="get">
-        Name: <input type="text" name="name"><br>
-        <label for="course">Course: </label>
-            <select id="course" name="course[]">
-                <option value="0">Python Nights(Beginner)</option>
-                <option value="1">Python Nights(Intermediate)</option>
-                <option value="2">Front-End Nights</option>
-                <option value="3">Development Tools</option>
-                <option value="4">Full Stack</option>
-            </select><br>
-            <label for="Discount">Discount: </label>
-            <select id="Discount" name="Discount[]">
-                <option value="0">None</option>
-                <option value="1">Early Bird 5%</option>
-                <option value="2">Early Bird 10%</option>
-                <option value="3">Early Bird 15%</option>
-                <option value="4">Special Discount 5%</option>
-                <option value="5">Special Discount 10%</option>
-                <option value="6">Special Discount 15%</option>
-            </select><br>
-        <input type="submit" value="Submit"><br>
-        <a href="./paymentmethod.html">Payment Method Page</a>
-    </form>
+    <div id="container">
+        <form action="pricingform.html" method="get">
+            Name: <input type="text" name="name"><br><br>
+            <label for="course">Course: </label>
+                <select id="course" name="course[]">
+                    <option value="0">Python Nights(Beginner)</option>
+                    <option value="1">Python Nights(Intermediate)</option>
+                    <option value="2">Front-End Nights</option>
+                    <option value="3">Development Tools</option>
+                    <option value="4">Full Stack</option>
+                </select><br><br>
+                <label for="Discount">Discount: </label>
+                <select id="Discount" name="Discount[]">
+                    <option value="0">None</option>
+                    <option value="1">Early Bird 5%</option>
+                    <option value="2">Early Bird 10%</option>
+                    <option value="3">Early Bird 15%</option>
+                    <option value="4">Special Discount 5%</option>
+                    <option value="5">Special Discount 10%</option>
+                    <option value="6">Special Discount 15%</option>
+                </select><br><br>
+            <input type="submit" value="Submit" style="margin: 0 25%;"><br><br>
+            <a href="./paymentmethod.html" style="margin: 0 15%;">Payment Method Page</a>
+        </form>
+    </div>
 </body>
 </html>
