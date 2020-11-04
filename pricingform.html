@@ -81,8 +81,8 @@
     }
 
     .bigPerc .divNum1 {
-        height: 57%;
-        padding-top: 6%;
+        height: 48%;
+        padding-top: 9%;
     }
 
     .bigPerc .divNum2 {
@@ -147,10 +147,10 @@
         padding-top: 10%;
     }
 
-    /* #periodTitleDiv .divNum1 {
-        padding-top: 4%;
-        height: 66%;
-    } */
+    #priceTitleDiv .divNum1 {
+        height: 46%;
+        padding-top: 14%;
+    }
 
     #periodTitleDiv .divNum3 {
         font-size: 11px;
@@ -467,6 +467,10 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         document.querySelector('#tutionNameId').innerHTML = pythonBegTution
         document.querySelector('#scheduleNameId').innerHTML = pythonBegSchedule
         
+        if(getAllUrlParams()["discount%5b%5d"] == 0) {
+            document.querySelector('#priceDiv3').style.paddingTop = "42%"
+        }
+
         if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
             document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFive
         }
@@ -508,6 +512,10 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         document.querySelector('#hourNameId').innerHTML = pythonIntHour
         document.querySelector('#tutionNameId').innerHTML = pythonIntTution
         document.querySelector('#scheduleNameId').innerHTML = pythonIntSchedule
+        
+        if(getAllUrlParams()["discount%5b%5d"] == 0) {
+            document.querySelector('#priceDiv3').style.paddingTop = "42%"
+        }
 
         if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
             document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFive
@@ -550,6 +558,10 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         document.querySelector('#hourNameId').innerHTML = frontendNightsHour
         document.querySelector('#tutionNameId').innerHTML = frontendNightsTution
         document.querySelector('#scheduleNameId').innerHTML = frontendNightsSchedule
+        
+        if(getAllUrlParams()["discount%5b%5d"] == 0) {
+            document.querySelector('#priceDiv3').style.paddingTop = "42%"
+        }
 
         if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
             document.querySelector('#discountPriceId').innerHTML = ninehundredDiscountFive
@@ -599,6 +611,10 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         document.querySelector('#hourNameId').innerHTML = devToolsHour
         document.querySelector('#tutionNameId').innerHTML = devToolsTution
         document.querySelector('#scheduleNameId').innerHTML = devToolsSchedule
+        
+        if(getAllUrlParams()["discount%5b%5d"] == 0) {
+            document.querySelector('#priceDiv3').style.paddingTop = "42%"
+        }
 
         if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
             document.querySelector('#discountPriceId').innerHTML = fourhundredDiscountFive
@@ -650,7 +666,11 @@ console.log("Discount",getAllUrlParams()["discount%5b%5d"])
         document.querySelector('#scheduleNameId').innerHTML = fullStackSchedule
         
         document.querySelector('#priceDiv3').style.paddingTop = "40%";
-
+        
+        if(getAllUrlParams()["discount%5b%5d"] == 0) {
+            document.querySelector('#priceDiv3').style.paddingTop = "42%"
+        }
+        
         if(getAllUrlParams()["discount%5b%5d"] == 1 || getAllUrlParams()["discount%5b%5d"] == 4) {
             document.querySelector('#discountPriceId').innerHTML = fullstackhundredDiscountFive
         }
