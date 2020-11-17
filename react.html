@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>React</title>
+</head>
+<style>
+    * {
+        font-family: sans-serif;
+        color: #37352F;
+    }
+
+    #mainContainer {
+        margin: 0 6%;
+    }
+
+    .greyBlueBackground {
+        background-color: #F9F9FA;
+        padding: 1.5em 3em 1.5em 1em;
+        display: flex;
+    }
+
+    .rocket {
+        margin: 0 1em 0 0;
+    }
+
+    .fa-caret-right {
+        transform: rotate(0deg);
+        transition: transform .2s linear;
+        margin-right: .5em;
+    }
+
+    .fa-caret-right.open {
+        transform: rotate(90deg);
+        transition: transform .2s linear;
+        margin-right: .5em;
+    }
+
+    #projectsContainer {
+        display: none;
+    }
+
+    #projectsContainer li {
+        margin: 0 0 .6em 0;
+    }
+
+    .headerDiv {
+        display: flex;
+    }
+
+    .goalsDiv {
+        display: flex;
+    }
+
+    h3 {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    h4 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .column1 {
+        flex: 1;
+        margin: 0;
+    }
+
+    .column2 {
+        flex: 3;
+        margin: 0;
+    }
+
+    .goalsDiv  .column2 {
+        padding: 0 0 0 1.5em;
+    }
+
+    .column2 li {
+        margin: 0 0 .6em 0;
+    }
+
+    .column2 h4 {
+        margin: 0;
+    }
+
+    .skyBlueBackground {
+        background-color: #DDEBF1;
+    }
+
+    .pinkBackground {
+        background-color: #FEF7F7;
+        display: flex;
+        padding: 1em 2em 1em 1em;
+    }
+
+    .thumbtack {
+        margin: 0 1em 0 0;
+    }
+
+    #thisProject {
+        color: #696C6A;
+    }
+
+    #thisProject:hover {
+        color: #000;
+    }
+
+    #githubFinder {
+        color: #696C6A;
+        font-weight: 600;
+    }
+
+    #githubFinder:hover {
+        color: #000;
+        font-weight: 600;
+
+    }
+
+    .greyLine {
+        margin: 2em 0 1em;
+        border-bottom: 1px solid lightgray;
+    }
+
+</style>
+<body>
+    <div id="mainContainer">
+        <h1>React and React Native</h1>
+        <p class="greyBlueBackground">
+            <span class="rocket"><i class="fa fas fa-rocket"></i></span>
+            <span class="topTwoText">This course will take students knowledge of Javascript and take it to an absolute level by teaching them two of the most popular libraries: React and React Native for building websites and cross-platform mobile applications.</span>
+        </p>
+        <p class="greyBlueBackground">
+            <span class="rocket"><i class="fa fas fa-rocket"></i></span>
+            <span class="topTwoText">Best way to learn is by building, publishing, hosting projects. Below are the shortlist of projects that students might get to build by taking this course.</span>
+            </p>
+        <h5 id="projectTitle" onclick="toggleProjects()" style="width: fit-content; cursor: pointer; margin-bottom: .5em;"><i class='fa fa-lg fa-caret-right' id="arrow"></i><span class="skyBlueBackground">Projects</span></h5>
+        <div id="projectsContainer">
+            <p style="margin: 0 0 0 1.3em;"><span class="skyBlueBackground">Vanilla JS and React</span></p>
+            <ul style="margin-bottom: .5em;">
+                <li>Github profile finder with Github API</li>
+                <li>Jobs website with third part APIs</li>
+                <li>News website in English, Russian and Korean</li>
+                <li>Library in the browser</li>
+                <li>Small todos, pokemon list, random quote and jokes websites</li>
+            </ul>
+            <p style="margin: 0 0 0 1.3em;"><span class="skyBlueBackground">React Native</span></p>
+            <ul>
+                <li>Reviews app</li>
+                <li>Note Taking app</li>
+                <li>Online market app</li>
+                <li>Turn the news website into a cross-platform app</li>
+                <li>Capstone project: one of those → voice recognition or messaging or dating app</li>
+            </ul>
+        </div>
+        <h3>Class schedule and content</h3>
+        <p>I will be creating this class schedule to teach React and React Native to people who have intermediate familiarity with JavaScript. No knowledge of React is required. This schedule is for a span of <b>10-12 weeks</b> with <b>three times a week, 2-3 hours per class</b></p><br>
+
+        <h3>Week 1</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">Asynchronous JS, ES6, DOM Manipulation</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>Get a better idea of everyone's familiarity with JavaScript</li>
+                <li>Explain parts of JS where they have difficulty</li>
+                <li><span class="skyBlueBackground">Build <a id="thisProject" href="https://augini.github.io/Vanilla-JavaScript-Projects/5.1%20Github%20Finder%20(Organized)/index.html">this project</a> with Github API to search user profiles</span></li>
+                <li><span class="skyBlueBackground">Home assignment: Book Library in the browser with JS</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: This week content shall improve students knowledge of JS since React and React Native is JS after all. They shall also know why React was created since building a project with Vanilla Javascript is complex to update and maintain.
+        </p>
+        <div class="greyLine"></div>
+
+        <h3>Week 2</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">React Syntax, React Components, State</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>Introduce React, its syntax, why it was created</li>
+                <li>Explain types of components, structure and use cases</li>
+                <li>State and their flow in React.</li>
+                <li>DOM events in React</li>
+                <li><span class="skyBlueBackground">Recreate our <a id="githubFinder" href="https://augini.github.io/Vanilla-JavaScript-Projects/5.1%20Github%20Finder%20(Organized)/index.html">GITHUB FINDER</a> project with React</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: This week, students should get a first idea about React and recreate the project that was built with Vanilla Javascript. It teaches them how React makes it easy to build projects.</p>
+        <div class="greyLine"></div>
+
+        <h3>Week 3</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <span class="column2">
+                <h4>Func/Class Components, Forms, SPA, Props, Style</h4>
+                <p style="margin-left: 1.5em;">Lifecycle methods, React Navigation, Programming Redirects</p>
+            </span>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>More in depth React. Build more simple projects</li>
+                <li>Explain updated version and changes in React</li>
+                <li>Why functional components are overtaking class components</li>
+                <li>Styled components</li>
+                <li><span class="skyBlueBackground">Projects: Pokemon list website in React</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: This week students have to understand React more in depth and be somehow ready to build and change React projects.</p>
+        <div class="greyLine"></div>
+        
+        <h3>Week 4</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">React HOC, Data Fetching, Axios, Redux</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>More React and state management</li>
+                <li>Redux, Context, Hooks</li>
+                <li><span class="skyBlueBackground">Projects: News website and Note Taking website in React</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: This will probably be hard and important for students. It might take more than a week. Since almost anything they will learn here will be used in React Native.</p>
+        <div class="greyLine"></div>
+                
+        <h3>Week 5</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">React Review, More Redux and Context, Bootstrap</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>Review what we learned in React so far. Make sure students are clear of React and its state management with React and Context</li>
+                <li>Explain React Bootstrap, React design libraries</li>
+                <li>More into external packages in React</li>
+                <li><span class="skyBlueBackground">Polish our news website and add language compatibility</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: Review and strengthen React knowledge of students</p>
+        <div class="greyLine"></div>
+                        
+        <h3>Week 6</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">React Native, Expo, Mobile development</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>Introduce React Native and Expo</li>
+                <li>Native components</li>
+                <li>Native API</li>
+                <li>State and Forms</li>
+                <li><span class="skyBlueBackground">Build TO DO app in React Native</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: Introduce React Native and Expo. Its pros and cons. Build a couple short projects in React</p>
+        <div class="greyLine"></div>
+        
+        <h3>Week 7</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">React Native styles, state management</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>More into state management, themes, data fetching</li>
+                <li><span class="skyBlueBackground">Start an online market app in React Native</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY:  More in depth React Native and the rest of the course from here on will be on Project building</p>
+        <div class="greyLine"></div>
+                
+        <h3>Week 8</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">React Navigation, Formik and Yup</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>More in depth React navigation</li>
+                <li>Taking forms with Formik and validation with Yup</li>
+                <li>Wrap up</li>
+                <li><span class="skyBlueBackground">Continue our online market app in React Native</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY:  Wrapping up React Native and detailed explanations of React navigation, Formik and yup</p>
+        <div class="greyLine"></div>
+           
+        <h3>Week 9</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">Finalized the market app, start news app, testing</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>Finalize and how to publish our app to Google Play Store</li>
+                <li>Start news app with a third party API</li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: Build more projects</p>
+        <div class="greyLine"></div>
+                   
+        <h3>Week 10</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">Experience with different APIs and packages</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>Polish and more work on news app</li>
+                <li>Take a group idea and make a final app in discussion with students</li>
+                <li><span class="skyBlueBackground">Capstone Project: e.g Voice recognition app, messaging app</span></li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: This week, we will probably work on project building, testing, maintenance and give students a capstone project to work on by themselves</p>
+        <div class="greyLine"></div>
+                           
+        <h3>Week 11</h3>
+        <div class="headerDiv">
+            <h4 class="column1">Topic:</h4>
+            <h4 class="column2">Testing, Review capstone projects, Final exam</h4>
+        </div>
+        <br>
+        <div class="goalsDiv">
+            <h4 class="column1">Goal</h4>
+            <ul class="column2">
+                <li>News in React Native, Famous websites and libraries</li>
+                <li>Review capstone projects, work more on them</li>
+                <li>Final exam</li>
+            </ul>
+        </div>
+        <p class="pinkBackground">
+            <span class="thumbtack"><i class="fa fa-rocket"></i></span>
+            SUMMARY: Final chapter in the course</p>
+        <div class="greyLine"></div>
+    </div>
+</body>
+</html>
+<script>
+    function toggleProjects() {
+        var project = document.getElementById("projectsContainer");
+        var icon = document.getElementById('arrow');
+        var open = false;
+        if (getComputedStyle(project, null).display === "none") {
+            icon.className = 'fa fa-caret-right fa-lg open';
+            project.style.display = "block";
+        } else {
+            icon.className = 'fa fa-caret-right fa-lg'; 
+            project.style.display = "none";
+        }
+        open = !open;
+    }
+</script>
